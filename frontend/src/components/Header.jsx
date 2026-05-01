@@ -12,7 +12,7 @@ export function Header({ connected, lastUpdated }) {
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         <Activity size={28} color="var(--accent-cyan)" />
         <h1 className="text-gradient" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
-          AntiGravity Stock Analytics
+          TradeSage
         </h1>
       </div>
 
