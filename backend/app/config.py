@@ -12,7 +12,7 @@ load_dotenv()
 TICKERS = ["AAPL", "MSFT", "GOOGL", "TSLA", "AMZN"]
 
 # ── API Keys ───────────────────────────────────────────────
-NEWSAPI_KEY = os.getenv("NEWSAPI_KEY", "")
+NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
 
 # ── Model ──────────────────────────────────────────────────
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "model.pkl")

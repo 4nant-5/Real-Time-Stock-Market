@@ -43,7 +43,7 @@ def fetch_news(ticker: str, count: int = SENTIMENT_HEADLINES_COUNT) -> list[dict
         url = "https://newsapi.org/v2/everything"
         params = {
             "q": query,
-            "apiKey": NEWSAPI_KEY,
+            "apiKey": "739944a26fac4696b9b64aba4eaec974",
             "language": "en",
             "sortBy": "publishedAt",
             "pageSize": count,
