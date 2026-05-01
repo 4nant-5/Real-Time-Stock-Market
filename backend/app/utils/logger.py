@@ -20,8 +20,10 @@ def setup_logger(name: str, log_file: str = None, level: int = logging.INFO) -> 
         datefmt="%Y-%m-%d %H:%M:%S",
     )
 
-    # Console handler
-    console_handler = logging.StreamHandler(sys.stdout)
+    # Console handler (force utf-8 on Windows)
+    import io
+    console_stream = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    console_handler = logging.StreamHandler(console_stream)
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
 
