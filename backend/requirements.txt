@@ -1,0 +1,21 @@
+# Core Backend
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+websockets==12.0
+
+# Data & ML
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+joblib==1.4.2
+
+# Stock Data
+yfinance==0.2.40
+
+# Sentiment Analysis
+vaderSentiment==3.3.2
+requests==2.32.3
+
+# Configuration
+pyyaml==6.0.1
+python-dotenv==1.0.1
